@@ -12,7 +12,7 @@ export default class Enzyme2Json3RNTest extends Component {
   render() {
     return (
       <View>
-        <App />
+        <App error="" />
       </View>
     )
   }

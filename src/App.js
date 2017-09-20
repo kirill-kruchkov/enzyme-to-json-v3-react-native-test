@@ -4,6 +4,7 @@ import MyComponent from './MyComponent'
 
 export default class App extends PureComponent {
   render() {
+    const isError = Boolean(this.props.error)
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
@@ -15,6 +16,7 @@ export default class App extends PureComponent {
           Cmd+D or shake for dev menu
         </Text>
         <MyComponent>World!</MyComponent>
+        {isError && <Text>Has Error!</Text>}
       </View>
     )
   }
